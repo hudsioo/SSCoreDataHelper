@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CreditCrad" representedClassName="CreditCrad" syncable="YES">
+        <attribute name="card_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="user_cards" inverseEntity="User" syncable="YES"/>
+    </entity>
     <entity name="User" representedClassName="User">
         <attribute name="createDate" optional="YES" attributeType="Date">
             <userInfo/>
@@ -7,9 +12,11 @@
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user_cards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CreditCrad" inverseName="user" inverseEntity="CreditCrad" syncable="YES"/>
         <userInfo/>
     </entity>
     <elements>
-        <element name="User" positionX="261" positionY="189" width="128" height="105"/>
+        <element name="User" positionX="261" positionY="189" width="128" height="118"/>
+        <element name="CreditCrad" positionX="-47" positionY="207" width="128" height="88"/>
     </elements>
 </model>

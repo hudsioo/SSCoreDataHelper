@@ -30,4 +30,7 @@
 //Insert To CoreData
 -(BOOL)insertToEntity:(NSString*)entityName withObject:(NSMutableDictionary*)object;
 
+//Delete Record
+-(BOOL)deleteEntity:(NSString*)entityName withObject:(NSManagedObject*)object;
+
 @end

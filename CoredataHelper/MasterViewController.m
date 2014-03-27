@@ -14,6 +14,8 @@
 
 #import "User.h"
 
+#import "AddNewUserViewController.h"
+
 @interface MasterViewController ()
 
 @end
@@ -32,7 +34,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
+    
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.userArray = [[NSMutableArray alloc]init];
@@ -40,33 +42,30 @@
     //Set ManageObjectContext
     [[SSCoreDataHelper sharedInstance] managedObjectContext];
     
+    
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
     //Load Data
     [self loadCoreData];
-
 }
 
 - (void)loadCoreData{
     self.userArray = [[SSCoreDataHelper sharedInstance] getDataForEntity:@"User" withSortKey:@"createDate" andSortAscending:YES];
+    
     [self.tableView reloadData];
 }
 
 
 - (void)insertNewObject:(id)sender
 {
-  
-    NSMutableDictionary * tempDic = [NSMutableDictionary dictionary];
-    [tempDic setValue:@"Somsak" forKey:@"name"];
-    [tempDic setValue:@"12345212345" forKey:@"user_id"];
-    [tempDic setValue:@"somsak@me.com" forKey:@"email"];
-    [tempDic setValue:[NSDate date] forKey:@"createDate"];
-
-    if ([[SSCoreDataHelper sharedInstance] insertToEntity:@"User" withObject:tempDic]){
-        NSLog(@"Insert Success!");
-        [self loadCoreData];
-    }else{
-        NSLog(@"Insert Abort!!");
-    }
-   
+    
+    AddNewUserViewController * addVC = [[AddNewUserViewController alloc]initWithNibName:@"AddNewUserViewController" bundle:nil];
+    UINavigationController * nv = [[UINavigationController alloc]initWithRootViewController:addVC];
+    [self presentViewController:nv animated:YES completion:nil];
+    
 }
 
 #pragma mark - Table View
@@ -90,15 +89,43 @@
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
+
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    User * userObj = self.userArray[indexPath.row];
+    NSSet * cardSet = [userObj valueForKey:@"user_cards"];
+    NSMutableArray * cardArray = [NSMutableArray array];
+    cardArray = [[cardSet allObjects] mutableCopy];
+    
+    //Delete all Cards
+    if (cardSet != NULL) {
+        for (NSManagedObject * c in cardArray){
+            if ([[SSCoreDataHelper sharedInstance] deleteEntity:@"CreditCrad" withObject:c]) {
+                 NSLog(@"Delete Card Success!");
+            }else{
+                 NSLog(@"Delete Card Fails");
+            }
+        }
+    }
+    
+    //Delete User
+    if ([[SSCoreDataHelper sharedInstance] deleteEntity:@"User" withObject:self.userArray[indexPath.row]]){
+    
+        NSLog(@"Delete User Success!");
+        // Reload Data
+        [self loadCoreData];
+    }else{
+        NSLog(@"Delete User Fails");
+    }
+    
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
@@ -115,7 +142,7 @@
         [[segue destinationViewController] setDetailItem:object];
     }
 }
-  
+
 
 - (void)didReceiveMemoryWarning
 {

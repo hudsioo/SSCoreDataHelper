@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F61608B18E1D7CD00012E2D /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F61608318E1D7CD00012E2D /* user@2x.png */; };
+		9F61608C18E1D7CD00012E2D /* visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F61608418E1D7CD00012E2D /* visa@2x.png */; };
+		9F61608D18E1D7CD00012E2D /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F61608518E1D7CD00012E2D /* user.png */; };
+		9F61608E18E1D7CD00012E2D /* cards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F61608618E1D7CD00012E2D /* cards@2x.png */; };
+		9F61608F18E1D7CD00012E2D /* master.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F61608718E1D7CD00012E2D /* master.png */; };
+		9F61609018E1D7CD00012E2D /* master@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F61608818E1D7CD00012E2D /* master@2x.png */; };
+		9F61609118E1D7CD00012E2D /* cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F61608918E1D7CD00012E2D /* cards.png */; };
+		9F61609218E1D7CD00012E2D /* visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F61608A18E1D7CD00012E2D /* visa.png */; };
 		9F85F2ED18D86E0C00F8F480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F85F2EC18D86E0C00F8F480 /* Foundation.framework */; };
 		9F85F2EF18D86E0C00F8F480 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F85F2EE18D86E0C00F8F480 /* CoreGraphics.framework */; };
 		9F85F2F118D86E0C00F8F480 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F85F2F018D86E0C00F8F480 /* UIKit.framework */; };
@@ -26,7 +34,11 @@
 		9F85F31F18D86E0C00F8F480 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F85F31D18D86E0C00F8F480 /* InfoPlist.strings */; };
 		9F85F32118D86E0C00F8F480 /* CoredataHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F85F32018D86E0C00F8F480 /* CoredataHelperTests.m */; };
 		9F85F32C18D86EE700F8F480 /* SSCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F85F32B18D86EE700F8F480 /* SSCoreDataHelper.m */; };
-		9F85F33318D87F4000F8F480 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F85F33218D87F4000F8F480 /* User.m */; };
+		9F97BAAE18E060BA006EE3A4 /* CardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F97BAAD18E060BA006EE3A4 /* CardsViewController.m */; };
+		9FEB720418DC580600F8A9A1 /* AddNewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB720218DC580600F8A9A1 /* AddNewUserViewController.m */; };
+		9FEB720518DC580600F8A9A1 /* AddNewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB720318DC580600F8A9A1 /* AddNewUserViewController.xib */; };
+		9FEB720918DC5ADE00F8A9A1 /* CreditCrad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB720818DC5ADE00F8A9A1 /* CreditCrad.m */; };
+		9FEB720C18DC5ADF00F8A9A1 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB720B18DC5ADF00F8A9A1 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F61608318E1D7CD00012E2D /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
+		9F61608418E1D7CD00012E2D /* visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "visa@2x.png"; sourceTree = "<group>"; };
+		9F61608518E1D7CD00012E2D /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		9F61608618E1D7CD00012E2D /* cards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cards@2x.png"; sourceTree = "<group>"; };
+		9F61608718E1D7CD00012E2D /* master.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = master.png; sourceTree = "<group>"; };
+		9F61608818E1D7CD00012E2D /* master@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "master@2x.png"; sourceTree = "<group>"; };
+		9F61608918E1D7CD00012E2D /* cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cards.png; sourceTree = "<group>"; };
+		9F61608A18E1D7CD00012E2D /* visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visa.png; sourceTree = "<group>"; };
 		9F85F2E918D86E0C00F8F480 /* CoredataHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoredataHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F85F2EC18D86E0C00F8F480 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9F85F2EE18D86E0C00F8F480 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +85,15 @@
 		9F85F32018D86E0C00F8F480 /* CoredataHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoredataHelperTests.m; sourceTree = "<group>"; };
 		9F85F32A18D86EE700F8F480 /* SSCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCoreDataHelper.h; sourceTree = "<group>"; };
 		9F85F32B18D86EE700F8F480 /* SSCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCoreDataHelper.m; sourceTree = "<group>"; };
-		9F85F33118D87F4000F8F480 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		9F85F33218D87F4000F8F480 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		9F97BAAC18E060BA006EE3A4 /* CardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardsViewController.h; sourceTree = "<group>"; };
+		9F97BAAD18E060BA006EE3A4 /* CardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardsViewController.m; sourceTree = "<group>"; };
+		9FEB720118DC580600F8A9A1 /* AddNewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewUserViewController.h; sourceTree = "<group>"; };
+		9FEB720218DC580600F8A9A1 /* AddNewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewUserViewController.m; sourceTree = "<group>"; };
+		9FEB720318DC580600F8A9A1 /* AddNewUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewUserViewController.xib; sourceTree = "<group>"; };
+		9FEB720718DC5ADE00F8A9A1 /* CreditCrad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCrad.h; sourceTree = "<group>"; };
+		9FEB720818DC5ADE00F8A9A1 /* CreditCrad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCrad.m; sourceTree = "<group>"; };
+		9FEB720A18DC5ADF00F8A9A1 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		9FEB720B18DC5ADF00F8A9A1 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,13 +156,11 @@
 		9F85F2F418D86E0C00F8F480 /* CoredataHelper */ = {
 			isa = PBXGroup;
 			children = (
-				9F85F32A18D86EE700F8F480 /* SSCoreDataHelper.h */,
-				9F85F32B18D86EE700F8F480 /* SSCoreDataHelper.m */,
+				9FEB720018DC57A700F8A9A1 /* SSCoreDataHelper */,
 				9F85F2FD18D86E0C00F8F480 /* AppDelegate.h */,
 				9F85F2FE18D86E0C00F8F480 /* AppDelegate.m */,
 				9F85F30018D86E0C00F8F480 /* Main.storyboard */,
-				9F85F33118D87F4000F8F480 /* User.h */,
-				9F85F33218D87F4000F8F480 /* User.m */,
+				9FEB71FF18DC579F00F8A9A1 /* Model */,
 				9F85F32D18D86F1700F8F480 /* ViewController */,
 				9F85F30C18D86E0C00F8F480 /* Images.xcassets */,
 				9F85F30318D86E0C00F8F480 /* CoredataHelper.xcdatamodeld */,
@@ -147,6 +172,14 @@
 		9F85F2F518D86E0C00F8F480 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9F61608318E1D7CD00012E2D /* user@2x.png */,
+				9F61608418E1D7CD00012E2D /* visa@2x.png */,
+				9F61608518E1D7CD00012E2D /* user.png */,
+				9F61608618E1D7CD00012E2D /* cards@2x.png */,
+				9F61608718E1D7CD00012E2D /* master.png */,
+				9F61608818E1D7CD00012E2D /* master@2x.png */,
+				9F61608918E1D7CD00012E2D /* cards.png */,
+				9F61608A18E1D7CD00012E2D /* visa.png */,
 				9F85F2F618D86E0C00F8F480 /* CoredataHelper-Info.plist */,
 				9F85F2F718D86E0C00F8F480 /* InfoPlist.strings */,
 				9F85F2FA18D86E0C00F8F480 /* main.m */,
@@ -176,12 +209,61 @@
 		9F85F32D18D86F1700F8F480 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9FEB720618DC581100F8A9A1 /* AddNew */,
+				9F97BAAF18E06346006EE3A4 /* UserView */,
+				9F97BAB018E06350006EE3A4 /* CardsView */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		9F97BAAF18E06346006EE3A4 /* UserView */ = {
+			isa = PBXGroup;
+			children = (
 				9F85F30618D86E0C00F8F480 /* MasterViewController.h */,
 				9F85F30718D86E0C00F8F480 /* MasterViewController.m */,
 				9F85F30918D86E0C00F8F480 /* DetailViewController.h */,
 				9F85F30A18D86E0C00F8F480 /* DetailViewController.m */,
 			);
-			name = ViewController;
+			name = UserView;
+			sourceTree = "<group>";
+		};
+		9F97BAB018E06350006EE3A4 /* CardsView */ = {
+			isa = PBXGroup;
+			children = (
+				9F97BAAC18E060BA006EE3A4 /* CardsViewController.h */,
+				9F97BAAD18E060BA006EE3A4 /* CardsViewController.m */,
+			);
+			name = CardsView;
+			sourceTree = "<group>";
+		};
+		9FEB71FF18DC579F00F8A9A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB720A18DC5ADF00F8A9A1 /* User.h */,
+				9FEB720B18DC5ADF00F8A9A1 /* User.m */,
+				9FEB720718DC5ADE00F8A9A1 /* CreditCrad.h */,
+				9FEB720818DC5ADE00F8A9A1 /* CreditCrad.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9FEB720018DC57A700F8A9A1 /* SSCoreDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9F85F32A18D86EE700F8F480 /* SSCoreDataHelper.h */,
+				9F85F32B18D86EE700F8F480 /* SSCoreDataHelper.m */,
+			);
+			name = SSCoreDataHelper;
+			sourceTree = "<group>";
+		};
+		9FEB720618DC581100F8A9A1 /* AddNew */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB720118DC580600F8A9A1 /* AddNewUserViewController.h */,
+				9FEB720218DC580600F8A9A1 /* AddNewUserViewController.m */,
+				9FEB720318DC580600F8A9A1 /* AddNewUserViewController.xib */,
+			);
+			name = AddNew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +342,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F61609018E1D7CD00012E2D /* master@2x.png in Resources */,
 				9F85F30D18D86E0C00F8F480 /* Images.xcassets in Resources */,
+				9F61609218E1D7CD00012E2D /* visa.png in Resources */,
+				9F61608F18E1D7CD00012E2D /* master.png in Resources */,
+				9F61609118E1D7CD00012E2D /* cards.png in Resources */,
 				9F85F2F918D86E0C00F8F480 /* InfoPlist.strings in Resources */,
+				9F61608B18E1D7CD00012E2D /* user@2x.png in Resources */,
+				9FEB720518DC580600F8A9A1 /* AddNewUserViewController.xib in Resources */,
+				9F61608D18E1D7CD00012E2D /* user.png in Resources */,
 				9F85F30218D86E0C00F8F480 /* Main.storyboard in Resources */,
+				9F61608E18E1D7CD00012E2D /* cards@2x.png in Resources */,
+				9F61608C18E1D7CD00012E2D /* visa@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +373,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F85F30B18D86E0C00F8F480 /* DetailViewController.m in Sources */,
-				9F85F33318D87F4000F8F480 /* User.m in Sources */,
 				9F85F30818D86E0C00F8F480 /* MasterViewController.m in Sources */,
+				9FEB720C18DC5ADF00F8A9A1 /* User.m in Sources */,
 				9F85F2FF18D86E0C00F8F480 /* AppDelegate.m in Sources */,
+				9F97BAAE18E060BA006EE3A4 /* CardsViewController.m in Sources */,
 				9F85F30518D86E0C00F8F480 /* CoredataHelper.xcdatamodeld in Sources */,
+				9FEB720918DC5ADE00F8A9A1 /* CreditCrad.m in Sources */,
 				9F85F32C18D86EE700F8F480 /* SSCoreDataHelper.m in Sources */,
+				9FEB720418DC580600F8A9A1 /* AddNewUserViewController.m in Sources */,
 				9F85F2FB18D86E0C00F8F480 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +586,7 @@
 				9F85F32618D86E0C00F8F480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F85F32718D86E0C00F8F480 /* Build configuration list for PBXNativeTarget "CoredataHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +595,7 @@
 				9F85F32918D86E0C00F8F480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

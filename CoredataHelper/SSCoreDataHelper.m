@@ -24,6 +24,20 @@
 	return sharedInstance;
 }
 
+-(BOOL)deleteEntity:(NSString*)entityName withObject:(NSManagedObject*)object{
+    [self.managedObjectContext deleteObject:object];
+    // Save the context.
+    NSError *error = nil;
+    if (![self.managedObjectContext save:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+        return NO;
+    }
+    return YES;
+    
+    
+}
+
 -(BOOL)insertToEntity:(NSString*)entityName withObject:(NSMutableDictionary*)object{
     NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:entityName inManagedObjectContext:self.managedObjectContext];
 
